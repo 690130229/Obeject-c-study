@@ -8,11 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CE17D00A19710B5800E3FE93 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE17D00919710B5800E3FE93 /* Fraction.m */; };
+		CE17D00D197118AA00E3FE93 /* DenominatorNotZeroException.m in Sources */ = {isa = PBXBuildFile; fileRef = CE17D00C197118AA00E3FE93 /* DenominatorNotZeroException.m */; };
 		CEC001881936C1CC0017CF47 /* greet.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC001871936C1CC0017CF47 /* greet.m */; };
 		CEF65BCE1931E35400A77915 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF65BCD1931E35400A77915 /* Foundation.framework */; };
 		CEF65BD11931E35400A77915 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF65BD01931E35400A77915 /* main.m */; };
 		CEF65BD51931E35400A77915 /* xx.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEF65BD41931E35400A77915 /* xx.1 */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE17D02C19711DD700E3FE93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE17D02819711DD600E3FE93 /* Complex.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE17D01719711DD600E3FE93;
+			remoteInfo = Complex;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		CEF65BC81931E35400A77915 /* CopyFiles */ = {
@@ -30,6 +41,9 @@
 /* Begin PBXFileReference section */
 		CE17D00819710B5800E3FE93 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		CE17D00919710B5800E3FE93 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		CE17D00B197118AA00E3FE93 /* DenominatorNotZeroException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DenominatorNotZeroException.h; sourceTree = "<group>"; };
+		CE17D00C197118AA00E3FE93 /* DenominatorNotZeroException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DenominatorNotZeroException.m; sourceTree = "<group>"; };
+		CE17D02819711DD600E3FE93 /* Complex.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Complex.xcodeproj; path = xx/Complex/Complex.xcodeproj; sourceTree = "<group>"; };
 		CEC001861936C1CC0017CF47 /* greet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = greet.h; sourceTree = "<group>"; };
 		CEC001871936C1CC0017CF47 /* greet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = greet.m; sourceTree = "<group>"; };
 		CEF65BCA1931E35400A77915 /* xx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = xx; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,9 +65,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE17D02919711DD600E3FE93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE17D02D19711DD700E3FE93 /* Complex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CEF65BC11931E35400A77915 = {
 			isa = PBXGroup;
 			children = (
+				CE17D02819711DD600E3FE93 /* Complex.xcodeproj */,
 				CEF65BCF1931E35400A77915 /* xx */,
 				CEF65BCC1931E35400A77915 /* Frameworks */,
 				CEF65BCB1931E35400A77915 /* Products */,
@@ -86,6 +109,8 @@
 				CEF65BD21931E35400A77915 /* Supporting Files */,
 				CEC001861936C1CC0017CF47 /* greet.h */,
 				CEC001871936C1CC0017CF47 /* greet.m */,
+				CE17D00B197118AA00E3FE93 /* DenominatorNotZeroException.h */,
+				CE17D00C197118AA00E3FE93 /* DenominatorNotZeroException.m */,
 			);
 			path = xx;
 			sourceTree = "<group>";
@@ -137,6 +162,12 @@
 			mainGroup = CEF65BC11931E35400A77915;
 			productRefGroup = CEF65BCB1931E35400A77915 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CE17D02919711DD600E3FE93 /* Products */;
+					ProjectRef = CE17D02819711DD600E3FE93 /* Complex.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CEF65BC91931E35400A77915 /* xx */,
@@ -144,11 +175,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		CE17D02D19711DD700E3FE93 /* Complex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = Complex;
+			remoteRef = CE17D02C19711DD700E3FE93 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEF65BC61931E35400A77915 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE17D00D197118AA00E3FE93 /* DenominatorNotZeroException.m in Sources */,
 				CEF65BD11931E35400A77915 /* main.m in Sources */,
 				CEC001881936C1CC0017CF47 /* greet.m in Sources */,
 				CE17D00A19710B5800E3FE93 /* Fraction.m in Sources */,

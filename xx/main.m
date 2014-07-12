@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Fraction.h"
+#import "DenominatorNotZeroException.h"
 #import "greet.h"
 
 int main(int argc, const char * argv[])
@@ -78,13 +80,38 @@ int main(int argc, const char * argv[])
         testBlock();
         
         */
-        #import "Fraction.h"
-         Fraction *frac = [[Fraction alloc] init];
-    [frac setNumerator:3 andDenominator:5];
-    [frac print];
-    [Fraction t];
-    [frac m];
-    [frac release];
+        
+         //Fraction *frac = [[Fraction alloc] init];
+        Fraction *frac = [[Fraction alloc] initWithNumerator:2 andDenominator:3];
+        
+        // [frac setNumerator:3 andDenominator:5];
+         [frac print];
+         [Fraction t];
+         //[frac m];
+         //[frac release];
+        
+        NSLog(@"%@",frac);
+        
+        //
+        //NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+        
+        @try {
+            Fraction *fra = [[Fraction alloc] initWithNumerator:3 andDenominator:0];
+        }
+        @catch (DenominatorNotZeroException *dne) {
+            //printf("%s\n",[[dne reason] cString]);
+            NSLog(@"%@",[dne reason]);
+        }
+        @catch(NSException *e)
+        {
+            //printf("%s\n", [[e name] cString]);
+            NSLog(@"%@",[e name]);
+        }
+        @finally {
+            printf("Finally run!");
+        }
+        
+        
 
      
         

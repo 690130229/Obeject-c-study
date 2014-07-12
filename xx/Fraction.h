@@ -14,5 +14,10 @@ static int t =0;
 
 -(void)print;
 +(void)t;
+
+//add
+-(id)init;
+-(Fraction*) initWithNumerator:(int)numerator andDenominator:(int)denominator;
+
 @end
 
