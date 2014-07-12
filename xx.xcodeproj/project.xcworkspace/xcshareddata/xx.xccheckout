@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7E0409C3-53CE-497B-ABAB-4032E02D15E0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>xx</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8AD68FA5-55EC-4D67-96F1-CC1FDAA31697</key>
+		<string>https://github.com/690130229/Obeject-c-study.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>xx.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8AD68FA5-55EC-4D67-96F1-CC1FDAA31697</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/690130229/Obeject-c-study.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8AD68FA5-55EC-4D67-96F1-CC1FDAA31697</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8AD68FA5-55EC-4D67-96F1-CC1FDAA31697</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Obeject-c-study</string>
+		</dict>
+	</array>
+</dict>
+</plist>
