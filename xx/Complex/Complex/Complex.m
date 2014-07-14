@@ -35,7 +35,20 @@
     imaginary = i;
 }
 
+-(double)real
+{
+    return real;
+}
 
+-(double)imaginary
+{
+    return imaginary;
+}
+
+-(void)print
+{
+    printf("%f + %fi",real,imaginary);
+}
 
 
 @end
