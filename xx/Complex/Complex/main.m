@@ -72,6 +72,75 @@ int main(int argc, const char * argv[])
         
         //
         
+        NSArray *array = [NSArray arrayWithObjects:@"one",@"two",@"three",@"four",nil];
+        int count = [array count];
+        int i;
+        for(i=0; i<count; ++i)
+        {
+            NSLog(@"%@",[array objectAtIndex:i]);
+            
+        }
+         
+        
+        
+        NSString *s = @"iphone,android,windows phone7";
+        array = [s componentsSeparatedByString:@","];
+        NSLog(@"%@",array);
+        
+        // iterator
+        NSMutableArray *mArrary = [NSMutableArray arrayWithCapacity:10];
+        [mArrary addObject:@"apple"];
+        [mArrary addObject:@"google"];
+        [mArrary addObject:@"Microsoft"];
+        
+        s = [mArrary componentsJoinedByString:@","];
+        NSLog(@"%@",s);
+        
+        NSEnumerator *e = [mArrary objectEnumerator];
+        id obj;
+        while (obj = [e nextObject]) {
+            NSLog(@"%@",obj);
+        }
+        
+        for (NSString *ms in mArrary) {
+            NSLog(@"%@",ms);
+        }
+        
+        //key-value   value-key
+        NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"apple",@"A",@"google",@"hah", nil];
+        NSLog(@"%@",[dic objectForKey:@"A"]);
+        
+        //set
+        NSRect rect = NSMakeRect(1, 2, 30, 50);
+        NSValue *v = [NSValue valueWithBytes:&rect objCType:@encode(NSRect)];
+        
+        NSMutableArray *mArray = [NSMutableArray arrayWithCapacity:3];
+        [mArray addObject:v];
+        NSRect rect2;
+        [[mArray objectAtIndex:0] getValue:&rect2];
+        NSLog(@"%f",rect2.size.width);
+        
+        //
+        NSDate *date = [NSDate date];
+        NSLog(@"Today is %@!", date);
+        
+        NSCalendarDate *date2 = [NSCalendarDate dateWithString:@"26 Apr 2008" calendarFormat:@"%d %b %Y"];
+        NSLog(@"Today is %@!",date2);
+        
+        //
+        const char *cs = "He is very high";
+        NSData *data = [NSData dataWithBytes:cs length:strlen(cs)+1];
+        NSLog(@"%@",data);//NSData store the types
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
